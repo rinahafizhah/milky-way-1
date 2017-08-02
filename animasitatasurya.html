@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <style>
+    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+  </style>
+</head>
+
+<body>
+  
+   <a-scene>
+     <a-assets>
+        <video id="awal" autoplay loop="true" src="awal.mp4"></video>
+      </a-assets>
+      <a-video src="#awal" width="16" height="9" position="0 0 -20"></a-video>
+      
+     <!--Matahari-->
+     <a-entity position="0 2 0">
+     <a-sphere position="5 2 0" radius="1.1" img src="http://res.cloudinary.com/rinahafz/image/upload/v1494305625/matahari_g6inzg.jpg"></a-sphere>
+       </a-entity>
+     <!--Merkurius-->
+     <a-entity position="5 2 0">
+       <a-animation attribute="rotation"
+               dur="5150"
+               fill="forwards"
+               from="0 -180 0"
+               to="0 180 0"
+               easing="linear"
+               repeat="indefinite"></a-animation>
+      <a-sphere position="3 2 0" radius=".09" img src="http://res.cloudinary.com/rinahafz/image/upload/v1494305705/merkurius_fct1oe.jpg"></a-sphere>
+       </a-entity>
+     
+     <!--Venus-->
+     <a-entity position="5 4 0">
+       <a-animation attribute="rotation"
+               dur="6109"
+               fill="forwards"
+               from="0 -179 0"
+               to="0 181 0"
+               easing="linear"
+               repeat="indefinite"></a-animation>
+     <a-sphere position="3.5 0 0" radius="0.1" img src="http://res.cloudinary.com/rinahafz/image/upload/v1494305642/venus_lj5plt.gif"></a-sphere>
+       </a-entity>
+      <a-light color="#da47da" position="0 0 0" type="ambient"></a-light>
+     <!--Bumi-->
+     <a-entity position="5 4 0">
+       <a-animation attribute="rotation"
+               dur="9125"
+               fill="forwards"
+               from="0 -180 0"
+               to="0 180 0"
+               easing="linear"
+               repeat="indefinite"></a-animation>
+     <a-sphere position="4 0 0" radius=".13" img src="http://res.cloudinary.com/rinahafz/image/upload/v1494305494/bumi_ykc0ug.jpg"></a-sphere>
+       </a-entity>
+     <!--Mars-->
+     <a-entity position="5 4 0">
+       <a-animation attribute="rotation"
+               dur="10100"
+               fill="forwards"
+               from="0 -160 0"
+               to="0 200 0"
+               easing="linear"
+               repeat="indefinite"></a-animation>
+     <a-sphere position="4.5 0 0" radius=".15" img src="http://res.cloudinary.com/rinahafz/image/upload/v1494305495/mars_a8jsxp.jpg"></a-sphere>
+       </a-entity>
+     <!--Jupiter-->
+     <a-entity position="5 4 3">
+       <a-animation attribute="rotation"
+               dur="11000"
+               fill="forwards"
+               from="0 -180 0"
+               to="0 180 0"
+               easing="linear"
+               repeat="indefinite"></a-animation>
+     <a-sphere position="5 0 0" radius=".18" img src="http://res.cloudinary.com/rinahafz/image/upload/v1494305500/jupiter_ffaegs.jpg"></a-sphere>
+       </a-entity>
+     <!--Saturnus-->
+     <a-entity position="5 4 0">
+       <a-animation attribute="rotation"
+               dur="12100"
+               fill="forwards"
+               from="0 -195 0"
+               to="0 165 0"
+               easing="linear"
+               repeat="indefinite"></a-animation>
+     <a-sphere position="5.5 0 0" radius="0.19" img src="http://res.cloudinary.com/rinahafz/image/upload/v1494305548/saturnus_qntw5w.jpg"></a-sphere>
+       </a-entity>
+     
+     <!--uranus-->
+     <a-entity position="5 4 0">
+       <a-animation attribute="rotation"
+               dur="12800"
+               fill="forwards"
+               from="0 -185 0"
+               to="0 175 0"
+               easing="linear"
+               repeat="indefinite"></a-animation>
+     <a-sphere position="6 0 0" radius="0.16" img src="http://res.cloudinary.com/rinahafz/image/upload/v1494305573/uranus_qth7xu.jpg"></a-sphere>
+       </a-entity>
+     
+     <!--neptunus-->
+     <a-entity position="5 4 0">
+       <a-animation attribute="rotation"
+               dur="13300"
+               fill="forwards"
+               from="0 -185 0"
+               to="0 175 0"
+               easing="linear"
+               repeat="indefinite"></a-animation>
+     <a-sphere position="6.6 0 0" radius="0.145" img src="http://res.cloudinary.com/rinahafz/image/upload/v1494305529/neptunus_jmtflg.jpg"></a-sphere>
+       </a-entity>
+     
+      <a-entity light="type: ambient; color: #fff; intensity: 5" position="0 2 1"></a-entity>
+     <a-entity position="3 5 7" rotation="0 0 0">
+    	 <a-entity camera look-controls wasd-controls></a-entity>
+     </a-entity>
+    	
+      <!-- Sky -->
+      <a-sky src="https://cdn.eso.org/images/large/eso0932a.jpg"></a-sky>
+  </a-scene>
+  
+  <script>
+
+    
+  </script>
+</body>
